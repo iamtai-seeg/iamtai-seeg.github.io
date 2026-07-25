@@ -494,6 +494,11 @@
             </select>
           </div>
           <div class="field"><label for="lf-msg">문의 내용</label><textarea id="lf-msg" name="message" placeholder="지금 겪고 계신 문제나 논의하고 싶은 내용을 자유롭게 적어주세요."></textarea></div>
+          <label for="lf-agree" style="display:flex;align-items:flex-start;gap:9px;margin:2px 0 12px;font-size:12.5px;line-height:1.55;color:var(--muted);cursor:pointer">
+            <input id="lf-agree" name="agree" type="checkbox" style="margin-top:2px;flex:none;width:16px;height:16px;accent-color:var(--brand)">
+            <span><b style="color:var(--ink)">[필수]</b> 개인정보 수집·이용에 동의합니다. 이름·이메일(필수)·회사·문의내용을 상담 응대 목적으로 수집하며 처리 후 3년 뒤 파기합니다. <a href="/privacy.html" target="_blank" rel="noopener" style="color:var(--brand);text-decoration:underline">개인정보처리방침</a></span>
+          </label>
+          <div id="lf-agree-err" style="display:none;color:#d64545;font-size:12px;margin:-8px 0 10px">개인정보 수집·이용에 동의해 주세요.</div>
           <button class="fsubmit" type="submit">상담 요청 보내기 →</button>
           <div class="falt">간단히 시작하고 싶으시면 <a href="https://iamtai-seeg.github.io/seeg-diagnostic/index.html">1분 성숙도 진단 →</a></div>
         </form>
@@ -528,6 +533,7 @@
         <a href="https://iamtai-seeg.github.io/seeg-diagnostic/index.html">성숙도 진단</a>
         <a href="#contact">상담 문의</a>
         <a href="#clients">고객·실적</a>
+        <a href="/privacy.html">개인정보처리방침</a>
       </div>
     </div>
     <div class="wrap base">
@@ -553,6 +559,8 @@
         name.style.borderColor=''; email.style.borderColor='';
         if(!name.value.trim()){name.focus();name.style.borderColor='#d64545';return;}
         if(!email.value.trim()||email.value.indexOf('@')<1){email.focus();email.style.borderColor='#d64545';return;}
+        var agree=el('lf-agree'), agreeErr=el('lf-agree-err'); if(agreeErr)agreeErr.style.display='none';
+        if(!agree.checked){ if(agreeErr)agreeErr.style.display='block'; agree.focus(); return; }
         var payload={type:"inquiry",name:name.value.trim(),org:el('lf-org').value.trim(),
           email:email.value.trim(),inquiryType:el('lf-type').value,message:el('lf-msg').value.trim(),source:"homepage"};
         if(PREVIEW){ showDone(); return; } // 미리보기 시연
