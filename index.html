@@ -3,6 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Google Analytics 4 (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MF6LN7T0BX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-MF6LN7T0BX');
+</script>
 <title>SEEG · 소프트웨어공학엑스퍼트그룹 | AI 시대 개발 조직 설계</title>
 <meta name="description" content="SEEG(소프트웨어공학엑스퍼트그룹)는 26년의 소프트웨어 공학으로 개발 조직의 아키텍처 설계·AI 네이티브 전환·조직 성숙도 진단·교육을 제공합니다.">
 <meta name="keywords" content="SEEG, 소프트웨어공학엑스퍼트그룹, 소프트웨어 아키텍처 컨설팅, AI 전환, AX 전환, 조직 성숙도 진단, 김진태, 개발 조직 설계, 소프트웨어 공학">
@@ -551,7 +559,7 @@
         btn.disabled=true; btn.textContent="보내는 중…";
         fetch(ENDPOINT,{method:"POST",body:JSON.stringify(payload)})   // text/plain simple request → CORS 프리플라이트 없음
           .then(function(r){return r.json();})
-          .then(function(res){ if(res&&res.ok){ showDone(); } else { throw new Error((res&&res.error)||"fail"); } })
+          .then(function(res){ if(res&&res.ok){ if(window.gtag){gtag('event','generate_lead',{form:'homepage_inquiry',inquiry_type:payload.inquiryType});} showDone(); } else { throw new Error((res&&res.error)||"fail"); } })
           .catch(function(){ // 리드 유실 방지: 실패 시 대체 창구 안내
             btn.disabled=false; btn.textContent="상담 요청 보내기 →";
             alt.innerHTML='전송에 문제가 있었습니다. 잠시 후 다시 시도해 주세요.';
