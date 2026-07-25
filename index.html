@@ -550,6 +550,15 @@
       if(!f) return;
       var btn=f.querySelector('.fsubmit'), alt=f.querySelector('.falt');
       var el=function(id){return document.getElementById(id);};
+      // 진단→상담 유입: URL의 등급(dg)·출처(src)를 폼에 프리필·태깅
+      try{
+        var qs=new URLSearchParams(location.search), _dg=qs.get('dg'), _src=qs.get('src');
+        if(_dg||_src){
+          var _ts=el('lf-type'); if(_ts){for(var _i=0;_i<_ts.options.length;_i++){if(_ts.options[_i].text.indexOf('성숙도')>-1){_ts.selectedIndex=_i;break;}}}
+          var _mg=el('lf-msg'); if(_mg&&_dg&&!_mg.value){_mg.value='[자가진단 결과: '+_dg+'] ';}
+          window.__leadSrc=(_src||'diagnostic')+(_dg?(' · '+_dg):'');
+        }
+      }catch(e){}
       function showDone(){ f.style.display='none'; done.classList.add('on'); done.scrollIntoView({behavior:'smooth',block:'center'}); }
       // 미리보기(아티팩트/로컬)에서는 외부 전송이 차단되므로 UX만 시연. 실제 도메인에서는 백엔드로 전송.
       var PREVIEW=/claude\.ai|usercontent|localhost|127\.0\.0\.1/.test(location.hostname);
@@ -562,7 +571,7 @@
         var agree=el('lf-agree'), agreeErr=el('lf-agree-err'); if(agreeErr)agreeErr.style.display='none';
         if(!agree.checked){ if(agreeErr)agreeErr.style.display='block'; agree.focus(); return; }
         var payload={type:"inquiry",name:name.value.trim(),org:el('lf-org').value.trim(),
-          email:email.value.trim(),inquiryType:el('lf-type').value,message:el('lf-msg').value.trim(),source:"homepage"};
+          email:email.value.trim(),inquiryType:el('lf-type').value,message:el('lf-msg').value.trim(),source:(window.__leadSrc||"homepage")};
         if(PREVIEW){ showDone(); return; } // 미리보기 시연
         btn.disabled=true; btn.textContent="보내는 중…";
         fetch(ENDPOINT,{method:"POST",body:JSON.stringify(payload)})   // text/plain simple request → CORS 프리플라이트 없음
