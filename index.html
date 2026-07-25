@@ -518,7 +518,7 @@
       <div class="col">
         <h4>바로가기</h4>
         <a href="https://iamtai-seeg.github.io/seeg-diagnostic/index.html">성숙도 진단</a>
-        <a href="https://forms.gle/mZUBrat91PuPUXaj7">상담 문의</a>
+        <a href="#contact">상담 문의</a>
         <a href="#clients">고객·실적</a>
       </div>
     </div>
@@ -554,7 +554,7 @@
           .then(function(res){ if(res&&res.ok){ showDone(); } else { throw new Error((res&&res.error)||"fail"); } })
           .catch(function(){ // 리드 유실 방지: 실패 시 대체 창구 안내
             btn.disabled=false; btn.textContent="상담 요청 보내기 →";
-            alt.innerHTML='전송에 문제가 있었습니다. <a href="https://forms.gle/mZUBrat91PuPUXaj7">문의 폼으로 남겨주세요 →</a>';
+            alt.innerHTML='전송에 문제가 있었습니다. 잠시 후 다시 시도해 주세요.';
           });
       });
     })();
