@@ -704,6 +704,10 @@
     var PREVIEW=/claude\.ai|usercontent|localhost|127\.0\.0\.1/.test(location.hostname);
     function open(){modal.hidden=false;} function close(){modal.hidden=true;}
     openBtn.addEventListener('click',open);
+    // 딥링크: #archbuilder-apply 로 진입하면 모달 자동 오픈(#archbuilder 는 섹션 스크롤 유지)
+    function abFromHash(){ if(location.hash === '#archbuilder-apply'){ open(); } }
+    abFromHash();
+    window.addEventListener('hashchange', abFromHash);
     document.getElementById('abClose').addEventListener('click',close);
     document.getElementById('abDim').addEventListener('click',close);
     form.addEventListener('submit',function(e){
