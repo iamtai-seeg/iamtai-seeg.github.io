@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MF6LN7T0BX"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-MF6LN7T0BX');</script>
+<title>강연이 끝나고 받은 질문들 | SEEG 인사이트</title>
+<meta name="description" content="전북의 소프트웨어 기업 임원들과 온라인 AX 강연을 마친 뒤 받은 질문들. 개인 한 사람의 AI 활용과 회사 전체의 전환은 어디서 갈리는가.">
+<meta name="author" content="김진태 · SEEG">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://iamtai-seeg.github.io/insights/ax-note-2-questions-after-the-talk.html">
+<meta name="color-scheme" content="light dark">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="SEEG · 소프트웨어공학엑스퍼트그룹">
+<meta property="og:url" content="https://iamtai-seeg.github.io/insights/ax-note-2-questions-after-the-talk.html">
+<meta property="og:title" content="강연이 끝나고 받은 질문들 | SEEG 인사이트">
+<meta property="og:description" content="전북의 소프트웨어 기업 임원들과 온라인 AX 강연을 마친 뒤 받은 질문들. 개인 한 사람의 AI 활용과 회사 전체의 전환은 어디서 갈리는가.">
+<meta property="og:image" content="https://iamtai-seeg.github.io/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="강연이 끝나고 받은 질문들 | SEEG 인사이트">
+<meta name="twitter:description" content="전북의 소프트웨어 기업 임원들과 온라인 AX 강연을 마친 뒤 받은 질문들. 개인 한 사람의 AI 활용과 회사 전체의 전환은 어디서 갈리는가.">
+<meta name="twitter:image" content="https://iamtai-seeg.github.io/og-image.png">
+<style>
+  /* ── SEEG 공식 CI: 브랜드 레드 #D81F27 · 블랙 워드마크 · 화이트 ── */
+  :root{
+    --bg:#ffffff; --bg-alt:#f7f7f8; --panel:#16181b;
+    --ink:#17191c; --ink-soft:#4b4f55; --muted:#868b92;
+    --line:#ececee; --line-2:#dedfe2;
+    --brand:#d81f27; --brand-2:#ec3b42; --brand-tint:#fdecec; --brand-deep:#16181b;
+    --pill:#17191c; --pill-ink:#ffffff;
+    --sans:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Pretendard","Malgun Gothic",system-ui,sans-serif;
+  }
+  @media (prefers-color-scheme:dark){
+    :root{
+      --bg:#0d0e10; --bg-alt:#141518; --panel:#141518;
+      --ink:#f2f3f5; --ink-soft:#c1c5cc; --muted:#868d97;
+      --line:#22242a; --line-2:#2f323a;
+      --brand:#f04b52; --brand-2:#ec3b42; --brand-tint:#2a1618; --brand-deep:#141518;
+      --pill:#f2f3f5; --pill-ink:#0d0e10;
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#0d0e10; --bg-alt:#141518; --panel:#141518;
+    --ink:#f2f3f5; --ink-soft:#c1c5cc; --muted:#868d97;
+    --line:#22242a; --line-2:#2f323a;
+    --brand:#f04b52; --brand-2:#ec3b42; --brand-tint:#2a1618; --brand-deep:#141518;
+    --pill:#f2f3f5; --pill-ink:#0d0e10;
+  }
+  :root[data-theme="light"]{
+    --bg:#ffffff; --bg-alt:#f7f7f8; --panel:#16181b;
+    --ink:#17191c; --ink-soft:#4b4f55; --muted:#868b92;
+    --line:#ececee; --line-2:#dedfe2;
+    --brand:#d81f27; --brand-2:#ec3b42; --brand-tint:#fdecec; --brand-deep:#16181b;
+    --pill:#17191c; --pill-ink:#ffffff;
+  }
+
+  *{box-sizing:border-box}
+  .seeg{font-family:var(--sans);color:var(--ink);background:var(--bg);
+    line-height:1.72;font-size:17px;-webkit-font-smoothing:antialiased;letter-spacing:-.011em}
+  .seeg *{margin:0}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 32px}
+  .eyebrow{font-size:13px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--brand-2)}
+  a{color:inherit;text-decoration:none}
+
+  /* nav */
+  .nav{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);
+    backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid var(--line)}
+  .nav .wrap{display:flex;align-items:center;height:74px;gap:38px}
+  .logo{display:flex;align-items:center;gap:11px;text-decoration:none}
+  .logo .wm{font-weight:900;font-size:27px;letter-spacing:-.03em;color:var(--brand);line-height:.9}
+  .logo .tl{font-size:11.5px;font-weight:700;line-height:1.18;color:var(--ink);letter-spacing:-.006em}
+  .nav .links{display:flex;gap:32px;font-size:15px;font-weight:600;color:var(--ink-soft)}
+  .nav .links a:hover{color:var(--ink)}
+  .nav .right{margin-left:auto;display:flex;align-items:center;gap:12px}
+  .pill{display:inline-flex;align-items:center;gap:8px;border-radius:999px;font-weight:700;font-size:15px;
+    padding:12px 24px;transition:transform .14s ease,opacity .14s;cursor:pointer;white-space:nowrap}
+  .pill.solid{background:var(--pill);color:var(--pill-ink)}
+  .pill.solid:hover{transform:translateY(-1px)}
+  .pill.line{border:1.5px solid var(--line-2);color:var(--ink);background:transparent}
+  .pill.line:hover{border-color:var(--ink)}
+  .pill.brand{background:var(--brand);color:#fff}
+  @media(max-width:860px){.nav .links{display:none}}
+
+  /* footer */
+  footer{background:var(--panel);color:#c3ccd8;padding:72px 0 44px;font-size:14.5px}
+  :root[data-theme="light"] footer{background:#0f141b}
+  footer .wrap{display:grid;grid-template-columns:1.7fr 1fr 1fr;gap:44px}
+  @media(max-width:760px){footer .wrap{grid-template-columns:1fr;gap:34px}}
+  footer .flogo{display:flex;align-items:center;gap:11px;margin-bottom:16px}
+  footer .flogo .wm{font-weight:900;font-size:27px;letter-spacing:-.03em;color:var(--brand);line-height:.9}
+  footer .flogo .tl{font-size:11.5px;font-weight:700;line-height:1.18;color:#cfd3da;letter-spacing:-.006em}
+  footer p{line-height:1.85;color:#93a0af}
+  footer h4{color:#f0f3f8;font-size:12.5px;letter-spacing:.1em;text-transform:uppercase;margin-bottom:16px;font-weight:800}
+  footer .col a{display:block;padding:6px 0;color:#c3ccd8}
+  footer .col a:hover{color:#fff}
+  footer .base{border-top:1px solid rgba(255,255,255,.1);margin-top:48px;padding-top:24px;color:#818d9c;
+    display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+</style>
+<style>
+.article{padding:56px 0 40px}
+.article .wrap{max-width:768px}
+.a-meta{border-bottom:1px solid var(--line);padding-bottom:30px;margin-bottom:38px}
+.a-meta h1{font-size:clamp(27px,4.2vw,42px);font-weight:850;letter-spacing:-.03em;line-height:1.22;margin-top:14px;text-wrap:balance}
+.a-dek{margin-top:22px;font-size:18px;color:var(--ink-soft);line-height:1.72}
+.a-body p{font-size:17.5px;color:var(--ink);line-height:1.88;margin-top:20px}
+.a-body h2{font-size:clamp(21px,2.8vw,27px);font-weight:800;letter-spacing:-.02em;margin-top:46px;line-height:1.3}
+.a-body b{font-weight:760}
+.a-body blockquote{margin:26px 0;padding:18px 26px;border-left:3px solid var(--brand);background:var(--bg-alt);border-radius:0 12px 12px 0;font-size:18px;line-height:1.75}
+.a-tags{margin-top:34px;font-size:15px;color:var(--muted);font-weight:600;letter-spacing:.01em}
+.cta-box{margin-top:54px;border:1px solid var(--line-2);border-radius:20px;padding:38px 34px;background:var(--bg-alt);text-align:center}
+.cta-box h3{font-size:22px;font-weight:850;letter-spacing:-.02em}
+.cta-box p{margin:14px auto 0;font-size:16.5px;color:var(--ink-soft);line-height:1.7;max-width:52ch}
+.cta-box .pill{margin-top:24px;padding:15px 30px;font-size:16px}
+.backlink{display:inline-block;margin:22px 0 0;font-size:14px;font-weight:600;color:var(--ink-soft)}
+</style>
+</head>
+<body class="seeg" id="top">
+<!-- nav -->
+  <div class="nav">
+    <div class="wrap">
+      <a class="logo" href="/" aria-label="SEEG — Software Engineering Expert Group">
+        <span class="wm">SEEG</span>
+        <span class="tl">Software Engineering<br>Expert Group</span>
+      </a>
+      <nav class="links">
+        <a href="/#about">회사소개</a>
+        <a href="/#services">서비스</a>
+        <a href="/#solutions">솔루션</a>
+        <a href="/#clients">고객·실적</a>
+        <a href="/#academy">아카데미</a>
+        <a href="/insights/">인사이트</a>
+      </nav>
+      <div class="right">
+        <a class="pill line" href="https://iamtai-seeg.github.io/seeg-diagnostic/index.html">성숙도 진단</a>
+        <a class="pill brand" href="/#contact">상담 문의 →</a>
+      </div>
+    </div>
+  </div>
+
+
+<article class="article">
+  <div class="wrap">
+    <div class="a-meta">
+      <span class="eyebrow">AX 노트 ② · AI 전환</span>
+      <h1>강연이 끝나고 받은 질문들</h1>
+      <p class="a-dek">전북의 소프트웨어 기업 임원들과 온라인 AX 강연을 마친 뒤 받은 질문들. 개인 한 사람의 AI 활용과 회사 전체의 전환은 어디서 갈리는가.</p>
+    </div>
+
+    <div class="a-body">
+      <p>지난주, 전북의 소프트웨어 기업 임원분들과 온라인으로 만나 AI 전환을 주제로 강연했습니다. 화면 너머라 표정은 잘 보이지 않았는데, 강연이 끝나자 질문이 쏟아졌습니다. 그리고 그 질문들이, 제가 준비한 두 시간보다 더 많은 것을 말해 주었습니다.</p>
+
+      <p>질문은 두 갈래였습니다.</p>
+
+      <p>한쪽은 아주 구체적이고 기술적이었습니다. "그 아담이라는 설계 에이전트는 어떤 LLM으로 만들었습니까?" "Claude API를 쓰면 토큰 비용이 꽤 나올 텐데, 그건 어떻게 관리합니까?" 이미 도구를 직접 만지고 계신 분들의 질문이었습니다. 반가웠고, 정확한 질문이었습니다.</p>
+
+      <p>그런데 저를 더 오래 붙든 건 다른 한 질문이었습니다. "개인 유튜브가 보여 주는 AI 전환과, 회사 전체의 AI 전환은 무엇이 다릅니까?"</p>
+
+      <p>이 질문 앞에서 저는 잠깐 멈췄습니다. 대부분의 전환이 막히는 진짜 이유가 바로 거기에 있었기 때문입니다.</p>
+
+      <p>유튜브에는 한 사람이 AI로 놀라운 일을 해내는 장면이 넘칩니다. 혼자서 하루 만에 앱을 만들고, 몇 줄 지시로 리포트를 뽑아냅니다. 분명 멋진 일입니다. 하지만 그것은 개인기입니다. 한 사람의 개인기가 아무리 뛰어나도, 그 자체로 조직의 전환이 되지는 않습니다.</p>
+
+      <p>회사 전체의 전환은 다릅니다. 열 사람이, 백 사람이 같은 기준으로 판단하고, 각자의 결과가 흩어지지 않고 회사의 자산으로 남아야 합니다. 그 출발점은 뜻밖에도 AI가 아니라 일 자체입니다. 먼저 우리 일이 어떤 단계로 흘러가는지 업무 프로세스를 또렷하게 정의하고, 그 위에서 어느 일을 AI에게 맡기고 어느 일은 사람이 끝까지 쥐고 있어야 하는지를 하나씩 정해야 합니다. 이 구분이 서 있지 않으면, 아무리 좋은 도구를 들여도 사람마다 제각각 쓰다가 결국 흩어지고 맙니다. 개인의 요령을 조직의 체계로 바꾼다는 건, 바로 이 프로세스와 역할의 경계를 세우는 일입니다. 어떤 LLM을 쓰는지, 토큰 비용을 어떻게 아끼는지는 그다음 문제입니다. 도구부터 고르고 전환에 실패하는 회사가 그토록 많은 이유가 여기에 있습니다.</p>
+
+      <p>그래서 저는 그날 이렇게 답했습니다. 남의 성공 사례를 부러워하기 전에, 우리 조직이 지금 개인기 단계에 머물러 있는지 아니면 체계 단계로 넘어갔는지부터 아셔야 합니다. 전환은 근사한 도구에서 시작하지 않습니다. 우리가 지금 어디에 서 있는지를 아는 데서 시작합니다.</p>
+
+      <p class="a-tags">#AX전환 #AI개발조직 #기술리더십 #디지털전환 #소프트웨어공학</p>
+    </div>
+
+    <div class="cta-box">
+      <h3>1분 자가진단</h3>
+      <p>일곱 개 영역·서른다섯 문항으로, 우리 조직이 지금 어디서 멈춰 있는지 제대로 짚어 봅니다.</p>
+      <a class="pill brand" href="https://iamtai-seeg.github.io/seeg-diagnostic/">1분 자가진단 시작하기 →</a>
+    </div>
+  </div>
+</article>
+
+<div class="wrap"><a class="backlink" href="/insights/">← 인사이트 목록</a></div>
+<footer id="site-footer">
+    <div class="wrap">
+      <div>
+        <div class="flogo">
+          <span class="wm">SEEG</span>
+          <span class="tl">Software Engineering<br>Expert Group</span>
+        </div>
+        <p>소프트웨어공학엑스퍼트그룹(주)</p>
+        <p style="margin-top:6px"><a href="mailto:canon.kim@gmail.com" style="color:inherit;text-decoration:none">canon.kim@gmail.com</a></p>
+      </div>
+      <div class="col">
+        <h4>서비스</h4>
+        <a href="/#services">아키텍처 설계·재건</a>
+        <a href="/#services">AI 네이티브 전환</a>
+        <a href="/#services">조직 성숙도 진단</a>
+        <a href="/#academy">교육·아카데미</a>
+      </div>
+      <div class="col">
+        <h4>바로가기</h4>
+        <a href="https://iamtai-seeg.github.io/seeg-diagnostic/index.html">성숙도 진단</a>
+        <a href="/#contact">상담 문의</a>
+        <a href="/#clients">고객·실적</a>
+        <a href="/privacy.html">개인정보처리방침</a>
+      </div>
+    </div>
+    <div class="wrap base">
+      <span>© 2010–2026 SEEG. All rights reserved.</span>
+      <span>소프트웨어공학엑스퍼트그룹(주) · 사업자등록번호 105-87-40254</span>
+    </div>
+  </footer>
+</body>
+</html>
