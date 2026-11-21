@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MF6LN7T0BX"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-MF6LN7T0BX');</script>
+<title>AX 컨설턴트 양성 과정 | SEEG 컨설팅 서비스</title>
+<meta name="description" content="컨설팅 6단계에 따라 기업의 AX를 진단하고, 업무를 돕는 AI 에이전트 초안을 직접 설계·구축하는 4회 32시간 프로젝트형 양성 과정.">
+<meta name="author" content="김진태 · SEEG">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://iamtai-seeg.github.io/programs/ax-consultant-course.html">
+<meta name="color-scheme" content="light dark">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://iamtai-seeg.github.io/programs/ax-consultant-course.html">
+<meta property="og:site_name" content="SEEG · 소프트웨어공학엑스퍼트그룹">
+<meta property="og:title" content="AX 컨설턴트 양성 과정 | SEEG 컨설팅 서비스">
+<meta property="og:description" content="컨설팅 6단계에 따라 기업의 AX를 진단하고, 업무를 돕는 AI 에이전트 초안을 직접 설계·구축하는 4회 32시간 프로젝트형 양성 과정.">
+<meta property="og:image" content="https://iamtai-seeg.github.io/og-image.png">
+<style>
+  /* ── SEEG 공식 CI: 브랜드 레드 #D81F27 · 블랙 워드마크 · 화이트 ── */
+  :root{
+    --bg:#ffffff; --bg-alt:#f7f7f8; --panel:#16181b;
+    --ink:#17191c; --ink-soft:#4b4f55; --muted:#868b92;
+    --line:#ececee; --line-2:#dedfe2;
+    --brand:#d81f27; --brand-2:#ec3b42; --brand-tint:#fdecec; --brand-deep:#16181b;
+    --pill:#17191c; --pill-ink:#ffffff;
+    --sans:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Pretendard","Malgun Gothic",system-ui,sans-serif;
+  }
+  @media (prefers-color-scheme:dark){
+    :root{
+      --bg:#0d0e10; --bg-alt:#141518; --panel:#141518;
+      --ink:#f2f3f5; --ink-soft:#c1c5cc; --muted:#868d97;
+      --line:#22242a; --line-2:#2f323a;
+      --brand:#f04b52; --brand-2:#ec3b42; --brand-tint:#2a1618; --brand-deep:#141518;
+      --pill:#f2f3f5; --pill-ink:#0d0e10;
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#0d0e10; --bg-alt:#141518; --panel:#141518;
+    --ink:#f2f3f5; --ink-soft:#c1c5cc; --muted:#868d97;
+    --line:#22242a; --line-2:#2f323a;
+    --brand:#f04b52; --brand-2:#ec3b42; --brand-tint:#2a1618; --brand-deep:#141518;
+    --pill:#f2f3f5; --pill-ink:#0d0e10;
+  }
+  :root[data-theme="light"]{
+    --bg:#ffffff; --bg-alt:#f7f7f8; --panel:#16181b;
+    --ink:#17191c; --ink-soft:#4b4f55; --muted:#868b92;
+    --line:#ececee; --line-2:#dedfe2;
+    --brand:#d81f27; --brand-2:#ec3b42; --brand-tint:#fdecec; --brand-deep:#16181b;
+    --pill:#17191c; --pill-ink:#ffffff;
+  }
+
+  *{box-sizing:border-box}
+  .seeg{font-family:var(--sans);color:var(--ink);background:var(--bg);
+    line-height:1.72;font-size:17px;-webkit-font-smoothing:antialiased;letter-spacing:-.011em}
+  .seeg *{margin:0}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 32px}
+  .eyebrow{font-size:13px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--brand-2)}
+  a{color:inherit;text-decoration:none}
+
+  /* nav */
+  .nav{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);
+    backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid var(--line)}
+  .nav .wrap{display:flex;align-items:center;height:74px;gap:38px}
+  .logo{display:flex;align-items:center;gap:11px;text-decoration:none}
+  .logo .wm{font-weight:900;font-size:27px;letter-spacing:-.03em;color:var(--brand);line-height:.9}
+  .logo .tl{font-size:11.5px;font-weight:700;line-height:1.18;color:var(--ink);letter-spacing:-.006em}
+  .nav .links{display:flex;gap:32px;font-size:15px;font-weight:600;color:var(--ink-soft)}
+  .nav .links a:hover{color:var(--ink)}
+  .nav .right{margin-left:auto;display:flex;align-items:center;gap:12px}
+  .pill{display:inline-flex;align-items:center;gap:8px;border-radius:999px;font-weight:700;font-size:15px;
+    padding:12px 24px;transition:transform .14s ease,opacity .14s;cursor:pointer;white-space:nowrap}
+  .pill.solid{background:var(--pill);color:var(--pill-ink)}
+  .pill.solid:hover{transform:translateY(-1px)}
+  .pill.line{border:1.5px solid var(--line-2);color:var(--ink);background:transparent}
+  .pill.line:hover{border-color:var(--ink)}
+  .pill.brand{background:var(--brand);color:#fff}
+  @media(max-width:860px){.nav .links{display:none}}
+
+  /* footer */
+  footer{background:var(--panel);color:#c3ccd8;padding:72px 0 44px;font-size:14.5px}
+  :root[data-theme="light"] footer{background:#0f141b}
+  footer .wrap{display:grid;grid-template-columns:1.7fr 1fr 1fr;gap:44px}
+  @media(max-width:760px){footer .wrap{grid-template-columns:1fr;gap:34px}}
+  footer .flogo{display:flex;align-items:center;gap:11px;margin-bottom:16px}
+  footer .flogo .wm{font-weight:900;font-size:27px;letter-spacing:-.03em;color:var(--brand);line-height:.9}
+  footer .flogo .tl{font-size:11.5px;font-weight:700;line-height:1.18;color:#cfd3da;letter-spacing:-.006em}
+  footer p{line-height:1.85;color:#93a0af}
+  footer h4{color:#f0f3f8;font-size:12.5px;letter-spacing:.1em;text-transform:uppercase;margin-bottom:16px;font-weight:800}
+  footer .col a{display:block;padding:6px 0;color:#c3ccd8}
+  footer .col a:hover{color:#fff}
+  footer .base{border-top:1px solid rgba(255,255,255,.1);margin-top:48px;padding-top:24px;color:#818d9c;
+    display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+</style>
+<style>
+.hero{padding:60px 0 28px}
+.hero .wrap{max-width:900px}
+.hero h1{font-size:clamp(30px,5vw,50px);font-weight:880;letter-spacing:-.033em;line-height:1.16;margin-top:14px;text-wrap:balance}
+.hero .dek{margin-top:22px;font-size:18.5px;color:var(--ink-soft);line-height:1.75;max-width:62ch}
+.facts{margin-top:34px;display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:14px}
+.fact{border:1px solid var(--line-2);border-radius:16px;padding:18px 20px;background:var(--bg-alt)}
+.fact .k{font-size:12.5px;font-weight:800;letter-spacing:.08em;color:var(--brand-2);text-transform:uppercase}
+.fact .v{margin-top:6px;font-size:16.5px;font-weight:700;line-height:1.45}
+.sec{padding:34px 0}
+.sec .wrap{max-width:900px}
+.sec h2{font-size:clamp(22px,3vw,30px);font-weight:850;letter-spacing:-.025em;line-height:1.28;display:flex;align-items:center;gap:12px}
+.sec h2 .n{display:inline-grid;place-items:center;min-width:34px;height:34px;border-radius:10px;background:var(--brand);color:#fff;font-size:16px;font-weight:800}
+.sec p.lead{margin-top:14px;font-size:17px;color:var(--ink-soft);line-height:1.8}
+.sec ul.pts{margin:16px 0 0;padding:0;list-style:none;display:grid;gap:12px}
+.sec ul.pts li{position:relative;padding:14px 18px 14px 44px;border:1px solid var(--line);border-radius:14px;background:var(--bg);font-size:16.5px;line-height:1.7}
+.sec ul.pts li::before{content:"";position:absolute;left:18px;top:21px;width:10px;height:10px;border-radius:50%;background:var(--brand)}
+.tbw{overflow-x:auto;-webkit-overflow-scrolling:touch}
+table.tb{width:100%;min-width:480px;border-collapse:collapse;margin-top:16px;font-size:15.5px}
+table.tb th,table.tb td{border:1px solid var(--line-2);padding:11px 14px;text-align:left;vertical-align:top;line-height:1.6}
+table.tb th{background:var(--bg-alt);font-weight:780;white-space:nowrap}
+table.tb td.t{white-space:nowrap;color:var(--ink-soft);width:1%}
+table.tb tr.sum td{font-weight:800;background:var(--bg-alt)}
+.tag{display:inline-block;font-size:12px;font-weight:800;padding:2px 9px;border-radius:999px;background:var(--brand-tint);color:var(--brand);margin-right:6px}
+details.sess{margin-top:14px;border:1px solid var(--line-2);border-radius:16px;background:var(--bg);overflow:hidden}
+details.sess>summary{cursor:pointer;list-style:none;padding:18px 22px;font-size:18px;font-weight:800;display:flex;justify-content:space-between;gap:14px;align-items:center}
+details.sess>summary::-webkit-details-marker{display:none}
+details.sess>summary::after{content:"＋";color:var(--brand);font-weight:900}
+details.sess[open]>summary::after{content:"－"}
+details.sess .in{padding:0 22px 22px;border-top:1px solid var(--line)}
+details.sess .goal{margin-top:16px;font-size:16.5px;color:var(--ink-soft);line-height:1.75}
+details.sess .out{margin-top:16px;padding:14px 18px;border-left:3px solid var(--brand);background:var(--bg-alt);border-radius:0 12px 12px 0;font-size:16px;line-height:1.7}
+.note{margin-top:14px;font-size:14.5px;color:var(--muted);line-height:1.7}
+.cta2{margin:30px 0 70px;border:1px solid var(--line-2);border-radius:22px;padding:40px 34px;background:var(--bg-alt);text-align:center}
+.cta2 h3{font-size:24px;font-weight:860;letter-spacing:-.02em}
+.cta2 p{margin:14px auto 0;font-size:16.5px;color:var(--ink-soft);line-height:1.75;max-width:54ch}
+.cta2 .btns{margin-top:26px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.cta2 .pill{padding:15px 28px;font-size:16px}
+@media(max-width:560px){.nav .pill.line{display:none}.nav .wrap{gap:14px}}
+@media(max-width:640px){table.tb th,table.tb td{padding:9px 10px;font-size:14.5px}.sec ul.pts li{padding-left:40px}}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Course", "name": "AX 컨설턴트 양성 과정", "description": "컨설팅 6단계에 따라 기업의 AX를 진단하고, 업무를 돕는 AI 에이전트 초안을 직접 설계·구축하는 4회 32시간 프로젝트형 양성 과정.", "provider": {"@type": "Organization", "name": "소프트웨어공학엑스퍼트그룹(SEEG)", "sameAs": "https://iamtai-seeg.github.io/"}, "timeRequired": "PT32H", "inLanguage": "ko", "educationalLevel": "실무자", "hasCourseInstance": {"@type": "CourseInstance", "courseMode": "blended", "instructor": {"@type": "Person", "name": "김진태"}}}</script>
+</head>
+<body class="seeg" id="top">
+<!-- nav -->
+  <div class="nav">
+    <div class="wrap">
+      <a class="logo" href="/" aria-label="SEEG — Software Engineering Expert Group">
+        <span class="wm">SEEG</span>
+        <span class="tl">Software Engineering<br>Expert Group</span>
+      </a>
+      <nav class="links">
+        <a href="/#about">회사소개</a>
+        <a href="/#services">서비스</a>
+        <a href="/#solutions">솔루션</a>
+        <a href="/#clients">고객·실적</a>
+        <a href="/#academy">아카데미</a>
+        <a href="/insights/">인사이트</a>
+      </nav>
+      <div class="right">
+        <a class="pill line" href="https://iamtai-seeg.github.io/seeg-diagnostic/index.html">성숙도 진단</a>
+        <a class="pill brand" href="/#contact">상담 문의 →</a>
+      </div>
+    </div>
+  </div>
+
+<header class="hero"><div class="wrap">
+  <span class="eyebrow">SEEG 컨설팅 서비스 · 교육</span>
+  <h1>AX 컨설턴트 양성 과정</h1>
+  <p class="dek">기업의 AX를 컨설팅하는 방법을 6단계 프로세스로 익히고, 선정한 업무를 돕는 AI 에이전트 초안을 직접 설계·구축하며, 품질 점검이 무엇인지 경험하는 4회 32시간의 프로젝트형 과정입니다. 코드 작성 없이 지시문과 문서 중심으로 진행합니다.</p>
+  <div class="facts">
+    <div class="fact"><div class="k">구성</div><div class="v">4회 · 32시간<br>(회차당 8시간)</div></div>
+    <div class="fact"><div class="k">방식</div><div class="v">현장과 온라인 병행<br>(협의 후 진행)</div></div>
+    <div class="fact"><div class="k">대상</div><div class="v">AX 컨설팅 역량을 키우려는<br>기관·기업 실무자 (소규모 정예)</div></div>
+    <div class="fact"><div class="k">강사</div><div class="v">김진태<br>SEEG 대표 · 소프트웨어공학 박사</div></div>
+    <div class="fact"><div class="k">일정</div><div class="v">회차별 날짜는<br>협의하여 확정</div></div>
+    <div class="fact"><div class="k">비용</div><div class="v">문의 시 안내<br>(범위·인원에 따라 협의)</div></div>
+  </div>
+</div></header>
+
+<section class="sec"><div class="wrap">
+  <h2><span class="n">1</span>과정 개요</h2>
+  <p class="lead">컨설팅 메타 프로세스 6단계 <b>(As-Is 진단 → To-Be 설정 → Gap 분석 → 전략 수립 → Action Plan → 실행·추적 관리)</b>에 따라 SW 기업의 AX를 컨설팅하는 방법을 익힙니다. 그 과정에서 선정한 업무를 돕는 AI 에이전트 초안을 직접 설계·구축하고, 품질 점검이 무엇인지 경험합니다. 개발 경험이 있는 분과 없는 분 모두 참여할 수 있고, 개발 경험자에게는 같은 주제의 심화 과제를 선택으로 제시합니다.</p>
+</div></section>
+
+<section class="sec"><div class="wrap">
+  <h2><span class="n">2</span>학습 목표</h2>
+  <ul class="pts">
+    <li>컨설팅 메타 프로세스 6단계를 이해하고, 단계마다 쓰는 양식(설문지·시트·템플릿)의 의미와 작성법을 익힌다.</li>
+    <li>SW 기업의 AX 수준을 5개 점검 항목으로 진단하고(As-Is), 도달할 목표를 합의하고(To-Be), 현재와 목표의 격차를 원인별로 정리한다(Gap).</li>
+    <li>컨설팅 업무 중 에이전트로 만들 후보를 점수표로 고르고(전략 수립), 시작 코스·30일 첫 성과 과제·일정과 담당을 정해 1페이지 처방전으로 정리한다(Action Plan).</li>
+    <li>선정한 업무를 구조 3가지의 비교와 근거로 상세 설계서에 확정하고, 지시문으로 옮겨 10항목 점검으로 동작하는 에이전트 초안을 만든다(실행).</li>
+    <li>정답을 아는 사례로 결과를 측정해 품질 점검의 기본 개념을 이해하고, 진행과 변경을 추적하는 방법을 익힌다.</li>
+  </ul>
+</div></section>
+
+<section class="sec"><div class="wrap">
+  <h2><span class="n">3</span>운영 방식</h2>
+  <ul class="pts">
+    <li><b>프로젝트형 실습.</b> SW 기업 AX 컨설팅 업무를 공통 사례로, 컨설팅 6단계를 순서대로 거치며 에이전트로 만들 업무를 정하고 구축합니다. 후보 업무는 앞 단계(01~03)에서 드러나고, 04단계에서 무엇을 만들지 정하며, 05단계에서 범위와 일정을 정하고, 06단계에서 설계·구축·점검합니다. 연습은 가상 기업 사례로 하고, 수강 기관의 실제 업무에 맞게 조정합니다.</li>
+    <li><b>코드 없이 진행.</b> 지시문과 문서 중심으로 진행합니다.</li>
+    <li><b>마스킹된 자료만 사용.</b> 개인정보와 고객 정보는 사용하지 않습니다.</li>
+    <li><b>양식 제공.</b> 단계마다 강의자료, 실습 워크북, 빈 양식(설문지·시트·템플릿)을 제공하고, 양식의 의미와 작성법을 함께 설명합니다.</li>
+    <li><b>실시간 피드백.</b> 온라인 회차는 화면 공유와 실시간 피드백으로 진행하며, 실습 중 질문은 즉시 받습니다.</li>
+  </ul>
+</div></section>
+
+<section class="sec"><div class="wrap">
+  <h2><span class="n">4</span>회차 구성</h2>
+  <div class="tbw"><table class="tb"><thead><tr><th>회차</th><th>주제</th><th>핵심 산출물</th></tr></thead><tbody>
+    <tr><td class="t"><b>1회차</b></td><td>컨설팅 6단계 개요, As-Is 진단, To-Be 설정</td><td>As-Is 진단 요약(레벨 판정표 포함), 반복 업무 인벤토리, 목표 레벨·성공 기준 합의 메모</td></tr>
+    <tr><td class="t"><b>2회차</b></td><td>Gap 분석과 전략 수립</td><td>격차표, 처음 막힌 항목과 이유 카드, 후보 업무 점수표, 전략 한 장(선정 업무와 개략 구조)</td></tr>
+    <tr><td class="t"><b>3회차</b></td><td>Action Plan, 상세 설계, 구축 시작</td><td>1페이지 처방전, 30일 첫 성과 과제 카드, 일정·담당표, 상세 설계서와 범위 정의서, 맥락 파일 세트(초안)</td></tr>
+    <tr><td class="t"><b>4회차</b></td><td>구축·품질 점검 프리뷰와 추적 관리</td><td>지시문 최종본, 10항목 점검표, 프리뷰 점검 결과표, 진행 추적 보드, 다음 단계 로드맵</td></tr>
+  </tbody></table></div>
+  <p class="note">1회차 방식(현장/온라인)은 협의 후 결정합니다.</p>
+</div></section>
+
+<section class="sec"><div class="wrap">
+  <h2><span class="n">5</span>회차별 상세</h2>
+  <details class="sess" open><summary><span>1회차 · 컨설팅 6단계 개요, As-Is 진단, To-Be 설정</span></summary>
+<div class="in"><p class="goal"><span class="tag">목표</span>컨설팅 6단계를 이해하고, 기업의 현재 수준을 증거로 진단하고, 도달할 목표를 측정 가능하게 합의하는 방법을 익힌다.</p><div class="tbw"><table class="tb"><thead><tr><th>내용</th><th>구분</th><th>시간</th></tr></thead><tbody><tr><td>오리엔테이션, 컨설팅 메타 프로세스 6단계, AX 성숙도 5단계</td><td class="t">강의</td><td class="t">1h</td></tr><tr><td>01 As-Is 진단: 사전 준비, 5개 점검 항목 진단, 증거 확인, 레벨 판정, 진단 도구</td><td class="t">강의</td><td class="t">1.5h</td></tr><tr><td>실습: 가상 기업 진단 역할극, 진단 도구 입력, 반복 업무 인벤토리 작성</td><td class="t">실습</td><td class="t">2h</td></tr><tr><td>02 To-Be 설정: 기대 수집, 목표 레벨, 성공 기준</td><td class="t">강의</td><td class="t">1h</td></tr><tr><td>실습: 목표 레벨과 성공 기준 작성, 합의 확인 메모</td><td class="t">실습</td><td class="t">1.5h</td></tr><tr><td>정리: 1회차 산출물 확인, 2회차 준비</td><td class="t">정리</td><td class="t">1h</td></tr><tr class="sum"><td>합계</td><td></td><td class="t">8h</td></tr></tbody></table></div>
+<div class="out"><b>핵심 산출물</b> · As-Is 진단 요약(레벨 판정표 포함), 반복 업무 인벤토리, 목표 레벨·성공 기준 합의 메모</div></div></details><details class="sess"><summary><span>2회차 · Gap 분석과 전략 수립</span></summary>
+<div class="in"><p class="goal"><span class="tag">목표</span>현재와 목표의 차이를 원인별로 정리하고, 에이전트로 만들 업무를 근거 있게 고른다.</p><div class="tbw"><table class="tb"><thead><tr><th>내용</th><th>구분</th><th>시간</th></tr></thead><tbody><tr><td>03 Gap 분석: 격차를 레벨·영역·문항으로 읽기, 처음 막힌 항목과 이유, 원인 분류</td><td class="t">강의</td><td class="t">1h</td></tr><tr><td>실습: 격차표, 처음 막힌 항목과 이유 카드, 후보 업무 지도</td><td class="t">실습</td><td class="t">2h</td></tr><tr><td>04 전략 수립: 후보 업무 5기준 점수표, 에이전트 적합성 4질문, 개략 구조 3안</td><td class="t">강의</td><td class="t">1.5h</td></tr><tr><td>실습: 점수표로 업무 선정, 개략 구조 비교, 전략 한 장</td><td class="t">실습</td><td class="t">2.5h</td></tr><tr><td>정리: 선정 업무 확인, 다음 회차 준비</td><td class="t">정리</td><td class="t">1h</td></tr><tr class="sum"><td>합계</td><td></td><td class="t">8h</td></tr></tbody></table></div>
+<div class="out"><b>핵심 산출물</b> · 격차표, 처음 막힌 항목과 이유 카드, 후보 업무 점수표, 전략 한 장(선정 업무와 개략 구조)</div></div></details><details class="sess"><summary><span>3회차 · Action Plan, 상세 설계, 구축 시작</span></summary>
+<div class="in"><p class="goal"><span class="tag">목표</span>시작 코스와 30일 첫 성과 과제를 정하고, 선정한 업무를 상세 설계서로 확정하고, 맥락 자료를 정리한다.</p><div class="tbw"><table class="tb"><thead><tr><th>내용</th><th>구분</th><th>시간</th></tr></thead><tbody><tr><td>05 Action Plan: 시작 코스, 30일 첫 성과 과제, 범위 정의서, 일정·담당표, 1페이지 처방전</td><td class="t">강의</td><td class="t">1h</td></tr><tr><td>실습: 첫 성과 과제 카드, 범위 정의서 초안, 처방전 작성</td><td class="t">실습</td><td class="t">1.5h</td></tr><tr><td>06 상세 설계: 업무 흐름도, 인지적 과업 분석(CTA), 품질 요구(드라이버), 구조 3안 비교</td><td class="t">강의</td><td class="t">1.5h</td></tr><tr><td>실습: 흐름도와 CTA 명세표, 구조 비교 평가표와 선정·미선정 논거</td><td class="t">실습</td><td class="t">1.5h</td></tr><tr><td>실습: 상세 설계서와 범위 정의서 v1.0</td><td class="t">실습</td><td class="t">1h</td></tr><tr><td>06 맥락 자산화: 맥락 4종, 파일 구성, Before/After 비교, 맥락 파일 초안</td><td class="t">강의·실습</td><td class="t">1h</td></tr><tr><td>정리: 다음 회차 준비</td><td class="t">정리</td><td class="t">0.5h</td></tr><tr class="sum"><td>합계</td><td></td><td class="t">8h</td></tr></tbody></table></div>
+<div class="out"><b>핵심 산출물</b> · 1페이지 처방전, 30일 첫 성과 과제 카드, 일정·담당표, 구조 비교 평가표와 논거, 상세 설계서와 범위 정의서, 맥락 파일 세트(초안)</div></div></details><details class="sess"><summary><span>4회차 · 구축·품질 점검 프리뷰와 추적 관리</span></summary>
+<div class="in"><p class="goal"><span class="tag">목표</span>설계서를 지시문으로 옮겨 동작하는 에이전트 초안을 만들고, 품질 점검과 진행 추적이 무엇인지 직접 한 번 경험한다.</p><div class="tbw"><table class="tb"><thead><tr><th>내용</th><th>구분</th><th>시간</th></tr></thead><tbody><tr><td>지시문 구조와 10항목 점검(게이트키퍼)</td><td class="t">강의</td><td class="t">1h</td></tr><tr><td>실습: 지시문 v0.1 작성, 점검 결과로 보완, 샘플 입력으로 실행</td><td class="t">실습</td><td class="t">2h</td></tr><tr><td>품질 점검 프리뷰: 정답 사례집과 일치율 개념</td><td class="t">강의</td><td class="t">0.5h</td></tr><tr><td>실습: 예시 10건 투입, 일치율 계산, 틀린 사례 살펴보기, 규칙 한 단락 고쳐 다시 확인</td><td class="t">실습</td><td class="t">2h</td></tr><tr><td>다음 단계 개요: 기록·원인 분리·회귀 확인·임계값·운영 규칙</td><td class="t">강의</td><td class="t">0.5h</td></tr><tr><td>추적 관리: 진행 추적 보드, 변경·이슈 기록</td><td class="t">강의·실습</td><td class="t">1h</td></tr><tr><td>성과 정리, 산출물 확인, 다음 단계 로드맵</td><td class="t">정리</td><td class="t">1h</td></tr><tr class="sum"><td>합계</td><td></td><td class="t">8h</td></tr></tbody></table></div>
+<div class="out"><b>핵심 산출물</b> · 에이전트 지시문 최종본, 10항목 점검표, 프리뷰 점검 결과표, 진행 추적 보드, 다음 단계 로드맵</div></div></details>
+</div></section>
+
+<section class="sec"><div class="wrap">
+  <h2><span class="n">6</span>산출물과 권리</h2>
+  <div class="tbw"><table class="tb"><thead><tr><th>구분</th><th>내용</th><th>권리</th></tr></thead><tbody>
+    <tr><td class="t"><b>실습 결과물</b></td><td>수강생이 작성한 진단 기록, 목표·성공 기준, 격차표, 점수표, 처방전, 업무 흐름도, 맥락 파일, 설계서, 지시문, 점검 결과, 진행 추적 보드 등</td><td class="t">수강 기관이 사용</td></tr>
+    <tr><td class="t"><b>교재·방법론</b></td><td>강의자료, 실습 워크북, 빈 양식(설문지·시트·템플릿), 러닝 케이스, 방법론</td><td>SEEG 보유 · 외부 재배포 등은 사전 협의</td></tr>
+  </tbody></table></div>
+</div></section>
+
+<section class="sec"><div class="wrap">
+  <h2><span class="n">7</span>사전 준비 사항</h2>
+  <ul class="pts">
+    <li><span class="tag">선택</span>1회차 전까지 컨설팅 접점이 있는 SW 기업 사례가 있으면 마스킹하여 1건 준비합니다. 없으면 가상 기업 사례를 사용합니다.</li>
+    <li>AI 도구 이용 환경: 사용할 AI 도구와 계정은 수강 기관의 보안 정책에 따라 협의합니다.</li>
+    <li>실습 자료는 마스킹 후 준비합니다. 개인정보와 고객 정보는 제외합니다.</li>
+  </ul>
+</div></section>
+
+<section class="sec"><div class="wrap">
+  <h2><span class="n">8</span>범위 외 사항</h2>
+  <p class="lead">다음은 본 과정의 범위에 포함하지 않으며, 4회차에서 개요만 소개합니다. 해당 내용의 강의자료와 워크북은 교재에 포함되어 후속 학습에 쓸 수 있습니다.</p>
+  <ul class="pts">
+    <li>관찰 계약서와 로그 설계 (기록 체계 구축)</li>
+    <li>틀린 결과의 원인 분리 진단</li>
+    <li>회귀 검증, 임계값 정책, 운영 거버넌스</li>
+    <li>실제 서비스 운영 환경 구축·배포</li>
+  </ul>
+  <p class="note">습득 정도는 수강생의 실습 참여와 업무 조건에 따라 달라질 수 있습니다.</p>
+</div></section>
+
+<section class="sec"><div class="wrap">
+  <div class="cta2">
+    <h3>과정 운영을 문의하세요</h3>
+    <p>일정, 인원, 현장·온라인 병행 방식, 수강 기관의 실제 업무에 맞춘 조정을 함께 정합니다. 비용은 범위와 인원에 따라 문의 시 안내드립니다.</p>
+    <div class="btns">
+      <a class="pill brand" href="mailto:canon.kim@gmail.com?subject=%5BAX%20%EC%BB%A8%EC%84%A4%ED%84%B4%ED%8A%B8%20%EC%96%91%EC%84%B1%20%EA%B3%BC%EC%A0%95%5D%20%EB%AC%B8%EC%9D%98">메일로 문의하기 →</a>
+      <a class="pill line" href="/#contact">상담 문의 폼</a>
+    </div>
+  </div>
+</div></section>
+
+<footer id="site-footer">
+    <div class="wrap">
+      <div>
+        <div class="flogo">
+          <span class="wm">SEEG</span>
+          <span class="tl">Software Engineering<br>Expert Group</span>
+        </div>
+        <p>소프트웨어공학엑스퍼트그룹(주)</p>
+        <p style="margin-top:6px"><a href="mailto:canon.kim@gmail.com" style="color:inherit;text-decoration:none">canon.kim@gmail.com</a></p>
+      </div>
+      <div class="col">
+        <h4>서비스</h4>
+        <a href="/#services">아키텍처 설계·재건</a>
+        <a href="/#services">AI 네이티브 전환</a>
+        <a href="/#services">조직 성숙도 진단</a>
+        <a href="/#academy">교육·아카데미</a>
+      </div>
+      <div class="col">
+        <h4>바로가기</h4>
+        <a href="https://iamtai-seeg.github.io/seeg-diagnostic/index.html">성숙도 진단</a>
+        <a href="/#contact">상담 문의</a>
+        <a href="/#clients">고객·실적</a>
+        <a href="/privacy.html">개인정보처리방침</a>
+      </div>
+    </div>
+    <div class="wrap base">
+      <span>© 2010–2026 SEEG. All rights reserved.</span>
+      <span>소프트웨어공학엑스퍼트그룹(주) · 사업자등록번호 105-87-40254</span>
+    </div>
+  </footer>
+</body>
+</html>
